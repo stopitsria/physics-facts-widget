@@ -1,49 +1,68 @@
 body {
-    margin: 0;
-    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    background-color: #0b0c10;
+    color: #c5c6c7;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
     text-align: center;
     padding: 2rem;
     max-width: 600px;
+    background: rgba(11, 12, 16, 0.7);
+    border-radius: 15px;
+    border: 1px solid #66fcf1;
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: #66fcf1;
+    text-shadow: 0 0 10px rgba(102, 252, 241, 0.5);
+    letter-spacing: 2px;
 }
 
 #fact-display {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: #2a2a2a;
-    border-radius: 8px;
+    padding: 1.5rem;
+    background: rgba(20, 22, 30, 0.7);
+    border-radius: 10px;
+    border: 1px solid rgba(102, 252, 241, 0.3);
+    color: #c5c6c7;
+    letter-spacing: 1px;
 }
 
 #fact-button {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.1rem;
     padding: 1rem 2rem;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
+    background: transparent;
+    color: #66fcf1;
+    border: 2px solid #66fcf1;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
 }
 
 #fact-button:hover {
-    background-color: #357abd;
+    background: rgba(102, 252, 241, 0.1);
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.5);
+    transform: translateY(-2px);
 }
 
 #fact-button:active {
-    transform: scale(0.98);
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(102, 252, 241, 0.5);
 } 
